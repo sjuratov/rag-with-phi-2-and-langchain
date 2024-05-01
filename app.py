@@ -35,7 +35,7 @@ model_id = "microsoft/phi-2"
 
 tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(
-    model_id, torch_dtype=torch.float32, device_map="auto", trust_remote_code=True
+    model_id, torch_dtype=torch.float32, trust_remote_code=True
 )
 
 # sentence transformers to be used in vector store
